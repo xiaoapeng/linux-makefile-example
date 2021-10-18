@@ -28,7 +28,7 @@ obj-y  +=  show_font/
 
 all  :   
 	make  -C  ./  -f  $(TOPDIR)/Makefile.build     
-	$(CC)  $(LDFLAGS)  -o  $(TARGET)  built-in.o 
+	$(CC)  -o  $(TARGET)  built-in.o  $(LDFLAGS)
 
 
 clean: 
